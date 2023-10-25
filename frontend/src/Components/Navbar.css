@@ -1,0 +1,105 @@
+#navbar-screen{
+    height: 60px;
+    width: 100%;
+    border: 1px solid grey;
+}
+.navbar-body{
+    height: 60px;
+    width: 96%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-left{
+    height: 100%;
+    width: 12%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-left > i{
+    align-self: center;
+}
+.navbar-left > div{
+    height: 35%;
+    align-self: center;
+    width: 65%;
+    /* border: 1px solid blue; */
+    padding-right: 6px;
+}
+.navbar-left > div > img{
+    height: 100%;
+    width: 100%;
+}
+.navbar-mid{
+    height: 100%;
+    width: 54%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+}
+.navbar-mid > div:nth-child(1){
+    height: 65%;
+    width: 92%;
+    margin-top: 9px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+.navbar-mid > div:nth-child(1) > input{
+    height: 94%;
+    width: 88%;
+    border: 1px solid rgba(128, 128, 128, 0.688); ;
+    box-shadow: 1px 0px 0px px grey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navbar-mid > div:nth-child(1) > input::placeholder{
+    font-size: 16px;
+    padding-left: 15px;
+}
+.navbar-mid > div:nth-child(1) > button{
+    height: 100%;
+    width: 11.1%;
+    border: 1px solid rgba(128, 128, 128, 0.597);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.087);
+}
+.navbar-mid > div:nth-child(1) > button > i{
+    color: rgba(0, 0, 0, 0.609);
+}
+.voice-button{
+    height: 65%;
+    background-color: rgba(128, 128, 128, 0.182);
+    align-self: center;
+    border-radius: 50%;
+    width: 40px;
+    /* border: 1px solid black; */
+}
+.voice-button > i{
+    margin-top: 10px;
+}
+.navbar-right{
+    height: 100%;
+    width: 14%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-right > i{
+    align-self: center;
+}
+.nav-photo{
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    /* border: 1px solid blue; */
+    border-radius: 50%;
+}
+.nav-photo > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
