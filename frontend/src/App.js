@@ -33,6 +33,7 @@ function App() {
           },
         }}
       />
+      <Navbar/>
       <Routes>
         <Route path='/' element={<YoutubeHome />} />
         <Route path='/navbar' element={<Navbar />} />

@@ -1,7 +1,11 @@
 #navbar-screen{
     height: 60px;
     width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    padding-bottom: 7px;
+    position: sticky;
+    top: 0%;
+    background-color: white;
 }
 .navbar-body{
     height: 60px;
