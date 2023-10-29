@@ -1,0 +1,92 @@
+#LoginScreen{
+    height: 540px;
+    width: 100%;
+    border: 1px solid white;
+}
+.LoginBody{
+    height: 500px;
+    border-radius: 5px;
+    width: 36%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.294);
+    text-align: center;
+}
+.LoginTopImage{
+    /* border: 1px solid black; */
+    width: 25%;
+    height: 30px;
+    margin: auto;
+    margin-top: 40px;
+}
+.LoginTopImage > img{
+    height: 100%;
+    width: 100%;
+}
+.LoginBodyheader{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.LoginMain{
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.LoginEmailInput{
+    height: 50px;
+    width: 95%;
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 500;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    border-radius: 5px;
+}
+.LoginForget{
+    text-align: left;
+    margin-top: 3px;
+    color: #1A73E8;
+    font-weight: 500;
+    font-size: 14px;
+}
+.LoginPasswordInput{
+    height: 50px;
+    width: 95%;
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 500;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    border-radius: 5px;
+}
+.LoginMainParagraph{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: grey;
+}
+.LoginMainParagraph > span{
+    color: #1A73E8;
+}
+.LoginMainLastDiv{
+    /* border: 1px solid black; */
+    height: 35px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.LoginMainLastDiv > a{
+    align-self: center;
+    font-size: 14.5px;
+    color: #1A73E8;
+}
+.LoginMainLastDiv > button{
+    width: 80px;
+    height: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: #1A73E8;
+    color: white;
+    font-size: 16px;
+}

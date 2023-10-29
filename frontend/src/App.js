@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import YoutubeHome from './Components/YoutubeHome';
 import Navbar from './Components/Navbar';
 import {Toaster} from 'react-hot-toast'
+import YoutubeLogin from './Components/YoutubeLogin';
+import YoutubeRegister from './Components/YoutubeRegister'
 
 function App() {
   return (
@@ -33,10 +35,12 @@ function App() {
           },
         }}
       />
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route path='/' element={<YoutubeHome />} />
         <Route path='/navbar' element={<Navbar />} />
+        <Route path='/login' element={<YoutubeLogin/>} />
+        <Route path='/register' element={<YoutubeRegister/>}/>
       </Routes>
     </div>
   );
