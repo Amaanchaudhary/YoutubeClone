@@ -1,0 +1,91 @@
+#SV-screen{
+    border: 0.1px solid green;
+    width: 99%;
+    height: 800px;
+}
+.SV-body{
+    width: 84%;
+    height: 100%;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.SV-body-left{
+    width: 60%;
+    height: 480px;
+    border: 1px solid black;
+    text-align: left;
+}
+.SV-main-vid{
+    width: 100%;
+    height: 360px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.SV-main-vid > iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.SV-title{
+    font-size: 19px;
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+    width: 94%;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 10px;
+} 
+.SV-left-lastdiv{
+    border: 1px solid grey ;
+    width: 100%;
+    height: 45px;
+    display: flex;
+}
+.SV-owner-photo{
+    border: 1px solid red;
+    border-radius: 50%;
+    height: 90%;
+    width: 40px;
+}
+.SV-owner-photo > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.SV-owner-name{
+    height: 85%;
+    width: 45px;
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.SV-owner-name > p{
+    margin-top: 0;
+    margin-bottom: 0%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.SV-owner-name > span{
+    font-size: 12px;
+    color: grey;
+}
+.SV-subs-button{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 65px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    align-self: center;
+}
+.SV-body-right{
+    width: 38%;
+    height: 100%;
+    border: 1px solid black;
+}

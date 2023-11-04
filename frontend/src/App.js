@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import {Toaster} from 'react-hot-toast'
 import YoutubeLogin from './Components/YoutubeLogin';
 import YoutubeRegister from './Components/YoutubeRegister'
+import YoutubeSingleVid from './Components/YoutubeSingleVid';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path='/navbar' element={<Navbar />} />
         <Route path='/login' element={<YoutubeLogin/>} />
         <Route path='/register' element={<YoutubeRegister/>}/>
+        <Route path="/singlevid" element={<YoutubeSingleVid/>} />
       </Routes>
     </div>
   );

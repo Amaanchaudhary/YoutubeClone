@@ -3,7 +3,7 @@
     width: 100%;
     border: 1px solid white;
 }
-.LoginBody{
+.LoginBody{ 
     height: 500px;
     border-radius: 5px;
     width: 36%;
@@ -78,7 +78,7 @@
 }
 .LoginMainLastDiv > a{
     align-self: center;
-    font-size: 14.5px;
+    font-size: 14.3px;
     color: #1A73E8;
 }
 .LoginMainLastDiv > button{

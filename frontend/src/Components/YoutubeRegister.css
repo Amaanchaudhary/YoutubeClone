@@ -1,9 +1,9 @@
-#LoginScreen{
+#RegisterScreen{
     height: 540px;
     width: 100%;
     border: 1px solid white;
 }
-.LoginBody{
+.RegisterBody{
     height: 500px;
     border-radius: 5px;
     width: 36%;
@@ -12,29 +12,29 @@
     border: 1px solid rgba(128, 128, 128, 0.294);
     text-align: center;
 }
-.LoginTopImage{
+.RegisterTopImage{
     /* border: 1px solid black; */
     width: 25%;
     height: 30px;
     margin: auto;
     margin-top: 40px;
 }
-.LoginTopImage > img{
+.RegisterTopImage > img{
     height: 100%;
     width: 100%;
 }
-.LoginBodyheader{
+.RegisterBodyheader{
     margin-top: 10px;
     font-weight: 500;
     margin-bottom: 60px;
 }
-.LoginMain{
+.RegisterMain{
     height: 300px;
     width: 80%;
     margin: auto;
     /* border: 1px solid black; */
 }
-.LoginEmailInput{
+.RegisterEmailInput{
     height: 50px;
     width: 95%;
     font-size: 17px;
@@ -45,7 +45,7 @@
     margin-bottom: 15px
 }
 
-.LoginPasswordInput{
+.RegisterPasswordInput{
     height: 50px;
     width: 95%;
     font-size: 17px;
@@ -55,17 +55,17 @@
     border-radius: 5px;
     margin-bottom: 15px
 }
-.LoginMainParagraph{
+.RegisterMainParagraph{
     text-align: left;
     font-size: 14px;
     font-weight: 400;
     margin-top: 30px;
     color: grey;
 }
-.LoginMainParagraph > span{
+.RegisterMainParagraph > span{
     color: #1A73E8;
 }
-.LoginMainLastDiv{
+.RegisterMainLastDiv{
     /* border: 1px solid black; */
     height: 35px;
     margin-top: 30px;
@@ -73,12 +73,14 @@
     display: flex;
     justify-content: space-between;
 }
-.LoginMainLastDiv > a{
+.RegisterMainLastDiv > a{
     align-self: center;
     font-size: 14.5px;
     color: #1A73E8;
+    /* width: 150px; */
+    /* border: 1px solid black; */
 }
-.LoginMainLastDiv > button{
+.RegisterxMainLastDiv > button{
     width: 80px;
     height: 100%;
     border-radius: 3px;
