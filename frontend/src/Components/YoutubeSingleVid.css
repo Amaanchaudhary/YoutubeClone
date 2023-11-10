@@ -1,27 +1,27 @@
 #SV-screen{
-    border: 0.1px solid green;
-    width: 99%;
+    border: 0.1px solid white;
+    width: 100%;
     height: 800px;
 }
 .SV-body{
     width: 84%;
-    height: 100%;
-    border: 1px solid red;
+    height: 99%;
+    /* border: 1px solid red; */
     margin: auto;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 .SV-body-left{
-    width: 60%;
+    width: 60.3%;
     height: 480px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: left;
 }
 .SV-main-vid{
     width: 100%;
     height: 360px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius: 10px;
 }
 .SV-main-vid > iframe{
@@ -39,16 +39,17 @@
     margin-bottom: 10px;
 } 
 .SV-left-lastdiv{
-    border: 1px solid grey ;
+    /* border: 1px solid grey ; */
     width: 100%;
     height: 45px;
     display: flex;
 }
 .SV-owner-photo{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 50%;
-    height: 90%;
-    width: 40px;
+    height: 85%;
+    width: 38px;
+    align-self: center;
 }
 .SV-owner-photo > img{
     height: 100%;
@@ -84,8 +85,116 @@
     border: none;
     align-self: center;
 }
+.SV-like-button{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 40px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    align-self: center;
+}
+.SV-share-button{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    align-self: center;
+}
+.SV-dot-button{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    align-self: center;
+}
 .SV-body-right{
-    width: 38%;
+    width: 37%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+.SV-right-top-div{
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+}
+.SV-right-top-div > button{
+    font-weight: 600;
+    margin-right: 11px;
+    height: 100%;
+    padding: 7px 11px;
+    border-radius: 5px;
+    border: none;
+}
+.SV-more-suggestions{
+    height: 94%;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 15px;
+}
+.SV-suggestion-div{
+    width: 100%;
+    height: 91px;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Sugg-left{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 43%;
+    border-radius: 10px;
+}
+.Sugg-left > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.Sugg-right{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 54%;
+    text-align: left;
+}
+.SV-vid-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.SV_vid-owner{
+    margin-top: 3px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: grey;
+}
+.SV-vid-views{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+.SV-new{
+    margin : 0;
+    font-size: 12px;
+    padding: 1px 4px;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.171);
+    font-weight: 500;
+    color: gray;
 }
