@@ -58,6 +58,8 @@
     box-shadow: 1px 0px 0px px grey;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    outline: none;
+    /* padding-left: 10px; */
 }
 .navbar-mid > div:nth-child(1) > input::placeholder{
     font-size: 16px;

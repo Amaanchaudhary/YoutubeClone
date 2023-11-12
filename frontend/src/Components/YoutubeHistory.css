@@ -1,12 +1,12 @@
 #HistoryScreen{
     height: 470px;
     width: 100%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .HistoryBody{
     height: 100%;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
 }
@@ -14,7 +14,7 @@
 .HistoryLeft{
     height: 300px;
     width: 5.5%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: sticky;
     top: 13.5%;
 }
@@ -27,7 +27,7 @@
 .HistoryRight{
     width: 90%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: left;
 }
 .History-h1{
@@ -35,15 +35,15 @@
     font-size: 34px;
 }
 .HistoryRightBody{
-    height: 83%;
-    border: 1px solid black;
+    height: 100%;
+    /* border: 1px solid black; */
     width: 86%;
     display: flex;
     justify-content: space-between;
 }
 .RightBody-left{
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 64%;
     text-align: left;
     overflow-y: scroll;
@@ -56,8 +56,117 @@
     margin-top: 5px;
     font-size: 20px;
 }
+.history-vids{
+    border-top: 1px solid rgba(128, 128, 128, 0.498);   
+    height: fit-content;
+    width: 100%;
+}
+.div-main{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.history-thumbnail{
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+    /* border: 1px solid green; */
+}
+.history-thumbnail > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.history-details{
+    height: 100%;
+    width: 57.5%;
+    /* border: 1px solid green; */
+}
+.history-title{
+    /* border: 1px solid black; */
+    width: 80%;
+    font-weight: 500;
+    overflow-y: hidden;
+    height: 45px;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 0%;
+}
+.history-owner{
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+}
+.history-owner > i{
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    color: white;
+    background-color: grey;
+    margin-left: 2px;
+}
+.history-views{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: grey;
+}
 .RightBody-right{
-    height: 85%;
-    border: 1px solid black;
+    height: 65%;
+    margin-top: 100px;
+    /* border: 1px solid black; */
     width: 27%;
+}
+.search-history{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    margin-bottom: 30px;
+}
+.search-history > i{
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.search-history > input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.clear-history{
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 20px;
+}
+.clear-history > i{
+    align-self: center;
+    margin-right: 10px;
+} 
+.clear-history > p{
+    margin: 0%;
+    margin-top: 3px;
+    font-weight: 500;
+    font-size: 14px;
+} 
+.right-last-div{
+    height: 100px;
+    width: 60%;
+    margin-left: 40px;
+    text-align: left;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+}
+.right-last-div > p{
+    margin-top: 3px;
+    color: grey;
+    font-size: 14px;
+    font-weight: 500;
 }
