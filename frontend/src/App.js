@@ -7,6 +7,7 @@ import YoutubeLogin from './Components/YoutubeLogin';
 import YoutubeRegister from './Components/YoutubeRegister'
 import YoutubeSingleVid from './Components/YoutubeSingleVid';
 import YoutubeHistory from './Components/YoutubeHistory'
+import YoutubeYou from './Components/YoutubeYou';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path='/register' element={<YoutubeRegister/>}/>
         <Route path="/singlevid" element={<YoutubeSingleVid/>} />
         <Route path='/history' element={<YoutubeHistory/>} />
+        <Route path='/you' element={<YoutubeYou/>} />
       </Routes>
     </div>
   );

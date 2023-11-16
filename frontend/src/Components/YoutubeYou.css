@@ -1,0 +1,136 @@
+#you-screen{
+    border: 2px solid green;
+    width: 100%;
+    height: 530px;
+}
+.you-body{
+    height : 87%;
+    width: 94%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.you-left{
+    height: 300px;
+    width: 70px;
+    /* border: 1px solid black; */
+    position: sticky;
+    top: 13.5%;
+}
+.you-left > span{
+    font-size: 10px;
+}
+.you-left > i{
+    margin-top: 40px;
+}
+
+.you-right{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 90%;
+    overflow-y: scroll;
+}
+.you-right::-webkit-scrollbar{
+    display: none;
+}
+.you-right-1{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.you-image{
+    height: 120px;
+    width: 120px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    align-self: center;
+    margin-left: 10px;
+}
+.you-image > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.you-details{
+    height: 130px;
+    width: 300px;
+    align-self: center;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    text-align: left;
+}
+.you-details > h1{
+    margin-top: 0;
+    margin-bottom: 0%;
+    font-size: 34px;
+}
+.you-details > p{
+    margin-top: 5px;
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 0%;
+}
+.you-details > button{
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    margin-right: 10px;
+    padding: 8px 10px;
+}
+.you-history-h1{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.you-history-h1 > i{
+    margin-right: 12px;
+}
+.hist-vids{
+    height: 460px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.you-history-single{
+    /* border: 1px solid red; */
+    width: 19.5%;
+    height: 215px;
+    text-align: left;
+}
+.you-hist-thumbnail{
+    height: 120px;
+    border-radius: 5px;
+    width: 100%;
+    /* border: 1px solid blue;   */
+}
+.you-hist-thumbnail > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.you-hist-title{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    overflow-y: hidden;
+    height: 35px;
+}
+.you-hist-owner{
+    font-size: 12px;
+    color: grey;
+    font-weight: 400;
+    margin-bottom: 7px;
+    margin-top: 0px;
+}
+.you-hist-views{
+    font-size: 12px;
+    color: grey;
+    font-weight: 400;
+    margin-top: 0px;
+}
