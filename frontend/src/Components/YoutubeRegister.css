@@ -71,7 +71,7 @@
     margin-top: 30px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
 }
 .RegisterMainLastDiv > a{
     align-self: center;
