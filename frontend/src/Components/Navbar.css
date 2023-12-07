@@ -89,23 +89,37 @@
 }
 .navbar-right{
     height: 100%;
-    width: 14%;
+    width: fit-content;
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-around;
 }
 .navbar-right > i{
     align-self: center;
+    margin-right: 20px;
 }
 .nav-photo{
-    height: 32px;
-    width: 32px;
+    height: 35px;
+    width: fit-content;
     align-self: center;
     /* border: 1px solid blue; */
-    border-radius: 50%;
+    display: flex;
+    /* border-radius: 50%; */
 }
 .nav-photo > img{
-    height: 100%;
-    width: 100%;
     border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+.nav-photo  button{
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 2px;
+    align-self: center;
+    background-color: rgba(255, 0, 0, 0.875);
+    color: white;
+    font-weight: 600;
+    /* margin-top: 1px; */
 }

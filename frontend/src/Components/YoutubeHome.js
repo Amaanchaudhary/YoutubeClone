@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './YoutubeHome.css';
 import Navbar from '../Components/Navbar';
+import { AuthContext } from '../Context/Authcontext';
 
 const YoutubeHome = () => {
 
@@ -101,9 +102,13 @@ const YoutubeHome = () => {
             SViews: "898K views"
         }
     ])
+
+    const {state} = useContext(AuthContext)
+
     return (
         <div id="home-screen">
             <Navbar/>
+            {/* <h1>Name : {state?.user?.name}</h1> */}
             <div className='youtube-body'>
                 <div className='home-left'>
                     <i style={{ marginTop: '25px' }} class="fa-solid fa-house fa-lg"></i><br />
