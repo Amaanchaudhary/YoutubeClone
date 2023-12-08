@@ -1,6 +1,7 @@
 import { createContext, useEffect, useReducer } from "react"
 import toast from "react-hot-toast";
 import api from "../helpers/axios.config";
+import { useNavigate } from "react-router-dom";
 
 export const AuthContext = createContext();
 
@@ -18,6 +19,7 @@ const reducer = (state , action) => {
 const ParentAuthContext = ({children}) => {
     
     const initialState = {user : null};
+    const rout = useNavigate();
 
     const [state , dispatch] = useReducer(reducer , initialState);
 
@@ -29,10 +31,10 @@ const ParentAuthContext = ({children}) => {
         localStorage.removeItem("My-token")
         dispatch({type : "LOGOUT"})
         toast.success("Logout Successfull")
+        rout("/")
     }
 
     useEffect(() => {
-
         async function getCurrentUser(){
             try{
                 const response = await api.post("/auth/getcurrentuser" , {token});

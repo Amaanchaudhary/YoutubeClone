@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className='nav-photo'>
                         {state?.user?.id ?
                         <>
-                        <img src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s88-c-k-c0x00ffffff-no-rj'/>
+                        <img onClick={() => rout("/you")} src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s88-c-k-c0x00ffffff-no-rj'/>
                         <button onClick={Logout}>Logout</button>
                         </>
                         :
