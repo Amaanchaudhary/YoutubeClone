@@ -102,7 +102,7 @@ const YoutubeHistory = () => {
                                 {data.map((pro) => (
                                     <div className='div-main'>
                                         <div className='history-thumbnail'>
-                                            <img src={pro.thumbnail}/>
+                                            <img alt='A' src={pro.thumbnail}/>
                                         </div>
                                         <div className='history-details'>
                                             <p className='history-title'>{pro.title}</p>

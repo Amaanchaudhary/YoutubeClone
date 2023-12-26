@@ -82,7 +82,7 @@ const YoutubeYou = () => {
                     <div className='you-right'>
                         <div className='you-right-1'>
                             <div className='you-image'>
-                                <img src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s144-c-k-c0x00ffffff-no-rj' />
+                                <img alt='A' src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s144-c-k-c0x00ffffff-no-rj' />
                             </div>
                             <div className='you-details'>
                                 <h1>Amaan Chaudhary</h1>
@@ -96,7 +96,7 @@ const YoutubeYou = () => {
                             {data.map((pro) => (
                                 <div className='you-history-single'>
                                      <div className='you-hist-thumbnail'>
-                                        <img src={pro.thumbnail}/>
+                                        <img alt='A' src={pro.thumbnail}/>
                                      </div>
                                      <p className='you-hist-title'>{pro.title}</p>
                                      <span className='you-hist-owner'>{pro.owner}</span>
@@ -109,7 +109,7 @@ const YoutubeYou = () => {
                             {data.map((pro) => (
                                 <div className='you-history-single'>
                                      <div className='you-hist-thumbnail'>
-                                        <img src={pro.thumbnail}/>
+                                        <img alt='A' src={pro.thumbnail}/>
                                      </div>
                                      <p className='you-hist-title'>{pro.title}</p>
                                      <span className='you-hist-owner'>{pro.owner}</span>

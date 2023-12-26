@@ -1,4 +1,4 @@
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 import './Navbar.css'
 import { useContext } from 'react';
 import { AuthContext } from '../Context/Authcontext';
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className='navbar-left'>
                     <i class="fa-solid fa-bars fa-lg"></i>
                     <div>
-                        <img src='https://www.gstatic.com/youtube/img/promos/growth/6ab442d6a1002dcfa655526badce27feecfc743e1fbe9cbb98ed6855a504a898_324x72.png' />
+                        <img alt='A' src='https://www.gstatic.com/youtube/img/promos/growth/6ab442d6a1002dcfa655526badce27feecfc743e1fbe9cbb98ed6855a504a898_324x72.png' />
                     </div>
                 </div>
                 <div className='navbar-mid'>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className='nav-photo'>
                         {state?.user?.id ?
                         <>
-                        <img onClick={() => rout("/you")} src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s88-c-k-c0x00ffffff-no-rj'/>
+                        <img alt='A' onClick={() => rout("/you")} src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s88-c-k-c0x00ffffff-no-rj'/>
                         <button onClick={Logout}>Logout</button>
                         </>
                         :

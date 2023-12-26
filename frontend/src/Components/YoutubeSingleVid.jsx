@@ -92,7 +92,7 @@ const YoutubeSingleVid = () => {
                         <p className='SV-title'>Tiger 3 Trailer | Salman Khan, Katrina Kaif, Emraan Hashmi | Maneesh Sharma | YRF Spy Universe</p>
                         <div className='SV-left-lastdiv'>
                             <div className='SV-owner-photo'>
-                                <img src='https://yt3.ggpht.com/b42QCAmVJ0kzNNi10_HmhsdfPEATQATS80hbLyHVJcVm6drn5pKtC6MY6wTluXi5iZ8_is5Q_Q=s88-c-k-c0x00ffffff-no-rj' />
+                                <img  alt='A'src='https://yt3.ggpht.com/b42QCAmVJ0kzNNi10_HmhsdfPEATQATS80hbLyHVJcVm6drn5pKtC6MY6wTluXi5iZ8_is5Q_Q=s88-c-k-c0x00ffffff-no-rj' />
                             </div>
                             <div className='SV-owner-name'>
                                 <p>YRF <i class="fa-solid fa-check fa-sm"></i></p>
@@ -115,7 +115,7 @@ const YoutubeSingleVid = () => {
                             {data.map((vids) => (
                                 <div className='SV-suggestion-div'>
                                     <div className='Sugg-left'>
-                                        <img src={vids.thumbnail}/>
+                                        <img alt='A' src={vids.thumbnail}/>
                                     </div>
                                     <div className='Sugg-right'>
                                         <p className='SV-vid-title'>{vids.title}</p>
