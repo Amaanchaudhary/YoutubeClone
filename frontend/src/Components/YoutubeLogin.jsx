@@ -7,42 +7,42 @@ import { AuthContext } from '../Context/Authcontext';
 
 const YoutubeLogin = () => {
 
-    const [data , setData] = useState({email : '' , password : ''});
-    const {Login} = useContext(AuthContext)
+    const [data, setData] = useState({ email: '', password: '' });
+    const { Login } = useContext(AuthContext)
 
     const rout = useNavigate();
-    console.log(data , 'data')
+    console.log(data, 'data')
 
-    function HandleChange(event){
-        setData({...data , [event.target.name] : event.target.value})
+    function HandleChange(event) {
+        setData({ ...data, [event.target.name]: event.target.value })
     }
 
-    async function handleSubmit(event){
+    async function handleSubmit(event) {
         event.preventDefault();
-        if(data.email && data.password){
-            if(data.password >= 8){
-                try{
-                    // console.log("hii")
-                    const response = await api.post('/auth/login' , {data})
-                    if(response.data.success){
-                        localStorage.setItem('My-token' , JSON.stringify(response.data.token))
+        if (data.email && data.password) {
+            if (data.password.length >= 8) {
+                try {
+                    const response = await api.post('auth/login', { data })
+                    console.log(response, "response")
+                    if (response.data.success) {
+                        localStorage.setItem('My-token', JSON.stringify(response.data.token))
                         Login(response.data.user)
-                        console.log(response.data.token , "token")
+                        console.log(response.data.token, "token")
                         toast.success(response.data.message);
-                        setData({email : '' , password : ''})
+                        setData({ email: '', password: '' })
                         rout("/");
-                    } else{
+                    } else {
                         throw new Error("Something went wrong");
                     }
-                }catch(error){
+                } catch (error) {
                     toast.error(error?.response.data.message);
-                    console.log(error.message , "error hai")
+                    console.log(error.message, "error hai")
                 }
-            }else{
-                toast.error("Password must be 8 digit")
+            } else {
+                toast.error("Password must be 8 digit ")
             }
-        }else{
-            toast.error("All fields are mandatory!")
+        } else {
+            toast.error("All Fields are Mandatory")
         }
     }
 
@@ -61,7 +61,7 @@ const YoutubeLogin = () => {
                         <p className='LoginMainParagraph'>Not your computer? Use Guest mode to sign in privately.<br /><span>Learn more</span></p>
                         <div className='LoginMainLastDiv'>
                             <a onClick={() => rout("/register")} >Create account</a>
-                            <input type='submit' value='Next'/>
+                            <input type='submit' value='Next' />
                         </div>
                     </form>
                 </div>

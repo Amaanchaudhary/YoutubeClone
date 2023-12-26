@@ -32,7 +32,7 @@ const YoutubeRegister = () => {
                 }
                 catch(error){
                     toast.error(error?.response.data.message);
-                    console.log(error , 'error hai')
+                    console.log(error , 'error here')
                 }
             }else{
                 toast.error("Password must be 8 digit")

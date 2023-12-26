@@ -1,8 +1,12 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import Navbar from './Navbar'
 import './YoutubeYou.css'
+import { AuthContext } from '../Context/Authcontext'
 
 const YoutubeYou = () => {
+
+    const { state } = useContext(AuthContext);
+
     const [data, setData] = useState([{
         thumbnail: 'https://i.ytimg.com/vi/MZXvl8N7KXs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==',
         image: 'https://yt3.ggpht.com/ytc/APkrFKb5bcmery3bCCmOwZrBGMS2mu7yqsqjDO8Kpme90g=s68-c-k-c0x00ffffff-no-rj',
@@ -78,6 +82,8 @@ const YoutubeYou = () => {
                         <span>Subscriptions</span><br />
                         <i class="fa-brands fa-youtube fa-lg"></i><br />
                         <span>You</span>
+                        <i class="fa-brands fa-youtube fa-lg"></i><br />
+                        <span>history</span>
                     </div>
                     <div className='you-right'>
                         <div className='you-right-1'>
@@ -85,8 +91,8 @@ const YoutubeYou = () => {
                                 <img alt='A' src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s144-c-k-c0x00ffffff-no-rj' />
                             </div>
                             <div className='you-details'>
-                                <h1>Amaan Chaudhary</h1>
-                                <p>@amaanchaudhary9809 &bull; View channel</p>
+                                <h1>{state?.user.name}</h1>
+                                <p>{state?.user.name}@gmail.com &bull; View channel</p>
                                 <button><i class="fa-solid fa-user"></i> Switch account</button>
                                 <button><i class="fa-brands fa-google"></i> Google Account</button>
                             </div>
@@ -95,12 +101,12 @@ const YoutubeYou = () => {
                         <div className='hist-vids'>
                             {data.map((pro) => (
                                 <div className='you-history-single'>
-                                     <div className='you-hist-thumbnail'>
-                                        <img alt='A' src={pro.thumbnail}/>
-                                     </div>
-                                     <p className='you-hist-title'>{pro.title}</p>
-                                     <span className='you-hist-owner'>{pro.owner}</span>
-                                     <p className='you-hist-views'>{pro.views}</p>
+                                    <div className='you-hist-thumbnail'>
+                                        <img alt='A' src={pro.thumbnail} />
+                                    </div>
+                                    <p className='you-hist-title'>{pro.title}</p>
+                                    <span className='you-hist-owner'>{pro.owner}</span>
+                                    <p className='you-hist-views'>{pro.views}</p>
                                 </div>
                             ))}
                         </div>
@@ -108,12 +114,12 @@ const YoutubeYou = () => {
                         <div className='hist-vids'>
                             {data.map((pro) => (
                                 <div className='you-history-single'>
-                                     <div className='you-hist-thumbnail'>
-                                        <img alt='A' src={pro.thumbnail}/>
-                                     </div>
-                                     <p className='you-hist-title'>{pro.title}</p>
-                                     <span className='you-hist-owner'>{pro.owner}</span>
-                                     <p className='you-hist-views'>{pro.views}</p>
+                                    <div className='you-hist-thumbnail'>
+                                        <img alt='A' src={pro.thumbnail} />
+                                    </div>
+                                    <p className='you-hist-title'>{pro.title}</p>
+                                    <span className='you-hist-owner'>{pro.owner}</span>
+                                    <p className='you-hist-views'>{pro.views}</p>
                                 </div>
                             ))}
                         </div>
