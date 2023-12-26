@@ -23,7 +23,7 @@ const YoutubeLogin = () => {
             if(data.password >= 8){
                 try{
                     // console.log("hii")
-                    const response = await api.post('auth/login' , {data})
+                    const response = await api.post('/auth/login' , {data})
                     if(response.data.success){
                         localStorage.setItem('My-token' , JSON.stringify(response.data.token))
                         Login(response.data.user)
@@ -36,7 +36,7 @@ const YoutubeLogin = () => {
                     }
                 }catch(error){
                     toast.error(error?.response.data.message);
-                    console.log(error , "error hai")
+                    console.log(error.message , "error hai")
                 }
             }else{
                 toast.error("Password must be 8 digit")
