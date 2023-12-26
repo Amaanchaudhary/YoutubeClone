@@ -27,7 +27,7 @@ root.render(
           },
           // Default options for specific types
           success: {
-            duration: 1000,
+            duration: 3000,
             theme: {
               primary: 'green',
               secondary: 'black',

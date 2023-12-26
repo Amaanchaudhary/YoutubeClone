@@ -1,9 +1,12 @@
 import './YoutubeSingleVid.css';
 import Navbar from './Navbar';
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const YoutubeSingleVid = () => {
 
+    const {id} = useParams();
+    
     const [data, setData] = useState([{
         thumbnail: 'https://i.ytimg.com/vi/MZXvl8N7KXs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==',
         image: 'https://yt3.ggpht.com/ytc/APkrFKb5bcmery3bCCmOwZrBGMS2mu7yqsqjDO8Kpme90g=s68-c-k-c0x00ffffff-no-rj',

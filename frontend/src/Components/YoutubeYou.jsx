@@ -2,10 +2,11 @@ import { useContext, useState } from 'react'
 import Navbar from './Navbar'
 import './YoutubeYou.css'
 import { AuthContext } from '../Context/Authcontext'
+import { useNavigate } from 'react-router-dom'
 
 const YoutubeYou = () => {
 
-    const { state } = useContext(AuthContext);
+    const rout = useNavigate();
 
     const [data, setData] = useState([{
         thumbnail: 'https://i.ytimg.com/vi/MZXvl8N7KXs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==',
@@ -68,31 +69,34 @@ const YoutubeYou = () => {
         views: '3.3M Views 2 years ago',
         title: 'Sara Zamana - Ganapath | Tiger Shroff,Elli AvrRam| Benny Dayal, Prakri..'
     }])
+
+    const { state } = useContext(AuthContext);
+
     return (
         <>
             <div id='you-screen'>
                 <Navbar />
                 <div className='you-body'>
                     <div className='you-left'>
-                        <i style={{ marginTop: '25px' }} class="fa-solid fa-house fa-lg"></i><br />
+                    <i onClick={()=> rout("/")} style={{ marginTop: '25px' }} class="fa-solid fa-house fa-lg"></i><br />
                         <span>Home</span><br />
                         <i class="fa-solid fa-photo-film fa-lg"></i><br />
                         <span>Shorts</span><br />
                         <i class="fa-solid fa-folder-minus fa-lg"></i><br />
                         <span>Subscriptions</span><br />
-                        <i class="fa-brands fa-youtube fa-lg"></i><br />
-                        <span>You</span>
-                        <i class="fa-brands fa-youtube fa-lg"></i><br />
+                        <i onClick={() => rout("/you")} class="fa-solid fa-user fa-lg"></i><br />
+                        <span>You</span><br/>
+                        <i onClick={() => rout("/history")} class="fa-solid fa-clock-rotate-left fa-lg"></i><br />
                         <span>history</span>
                     </div>
                     <div className='you-right'>
                         <div className='you-right-1'>
                             <div className='you-image'>
-                                <img alt='A' src='https://yt3.ggpht.com/yti/ADpuP3Ov-Nos4utGNV0zwoW0XDk3Cm3ZxMKlZaC-JAoVjtU=s144-c-k-c0x00ffffff-no-rj' />
+                                <img alt='A' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png' />
                             </div>
                             <div className='you-details'>
-                                <h1>{state?.user.name}</h1>
-                                <p>{state?.user.name}@gmail.com &bull; View channel</p>
+                                <h1>{state?.user?.name}</h1>
+                                <p>{state?.user?.name} &bull; View channel</p>
                                 <button><i class="fa-solid fa-user"></i> Switch account</button>
                                 <button><i class="fa-brands fa-google"></i> Google Account</button>
                             </div>

@@ -22,7 +22,7 @@ const YoutubeLogin = () => {
         if (data.email && data.password) {
             if (data.password.length >= 8) {
                 try {
-                    const response = await api.post('auth/login', { data })
+                    const response = await api.post("auth/login", { data })
                     console.log(response, "response")
                     if (response.data.success) {
                         localStorage.setItem('My-token', JSON.stringify(response.data.token))
@@ -36,7 +36,7 @@ const YoutubeLogin = () => {
                     }
                 } catch (error) {
                     toast.error(error?.response.data.message);
-                    console.log(error.message, "error hai")
+                    console.log(error.message, "Error hai")
                 }
             } else {
                 toast.error("Password must be 8 digit ")
@@ -60,7 +60,7 @@ const YoutubeLogin = () => {
                         <input className='LoginPasswordInput' type='password' name='password' onChange={HandleChange} placeholder='Password' />
                         <p className='LoginMainParagraph'>Not your computer? Use Guest mode to sign in privately.<br /><span>Learn more</span></p>
                         <div className='LoginMainLastDiv'>
-                            <a onClick={() => rout("/register")} >Create account</a>
+                            <p onClick={() => rout("/register")} >Create account</p>
                             <input type='submit' value='Next' />
                         </div>
                     </form>

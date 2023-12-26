@@ -76,7 +76,7 @@
     display: flex;
     justify-content: space-between;
 }
-.LoginMainLastDiv > a{
+.LoginMainLastDiv > p{
     align-self: center;
     font-size: 14.3px;
     color: #1A73E8;

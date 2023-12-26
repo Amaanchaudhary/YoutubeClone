@@ -1,9 +1,12 @@
 import './YoutubeHistory.css'
 import Navbar from './Navbar'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const YoutubeHistory = () => {
+
+    const rout = useNavigate();
     const [data, setData] = useState([{
         thumbnail: 'https://i.ytimg.com/vi/MZXvl8N7KXs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==',
         image: 'https://yt3.ggpht.com/ytc/APkrFKb5bcmery3bCCmOwZrBGMS2mu7yqsqjDO8Kpme90g=s68-c-k-c0x00ffffff-no-rj',
@@ -84,14 +87,16 @@ const YoutubeHistory = () => {
         <div id='HistoryScreen'>
             <div className='HistoryBody'>
                 <div className='HistoryLeft'>
-                <i style={{ marginTop: '25px' }} class="fa-solid fa-house fa-lg"></i><br />
+                <i style={{ marginTop: '25px' }} onClick={() => rout("/")} class="fa-solid fa-house fa-lg"></i><br />
                     <span>Home</span><br />
                     <i class="fa-solid fa-photo-film fa-lg"></i><br />
                     <span>Shorts</span><br />
                     <i class="fa-solid fa-folder-minus fa-lg"></i><br />
                     <span>Subscriptions</span><br />
-                    <i class="fa-brands fa-youtube fa-lg"></i><br />
-                    <span>You</span>
+                    <i onClick={() => rout("/you")} class="fa-solid fa-user fa-lg"></i><br />
+                    <span>You</span><br/>
+                    <i onClick={() => rout("/history")} class="fa-solid fa-clock-rotate-left fa-lg"></i><br />
+                    <span>You</span><br/>
                 </div>
                 <div className='HistoryRight'>
                     <div className='HistoryRightBody'>

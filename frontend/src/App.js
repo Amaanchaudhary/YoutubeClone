@@ -8,6 +8,7 @@ import YoutubeRegister from './Components/YoutubeRegister'
 import YoutubeSingleVid from './Components/YoutubeSingleVid';
 import YoutubeHistory from './Components/YoutubeHistory'
 import YoutubeYou from './Components/YoutubeYou';
+import PageNotFound from './Components/PageNotFound';
 
 function App() {
   return (
@@ -40,11 +41,12 @@ function App() {
       />
       {/* <Navbar/> */}
       <Routes>
+        <Route exact path='*' element={<PageNotFound/>} />
         <Route path='/' element={<YoutubeHome />} />
         <Route path='/navbar' element={<Navbar />} />
         <Route path='/login' element={<YoutubeLogin/>} />
         <Route path='/register' element={<YoutubeRegister/>}/>
-        <Route path="/singlevid" element={<YoutubeSingleVid/>} />
+        <Route path="/singlevid/:id" element={<YoutubeSingleVid/>} />
         <Route path='/history' element={<YoutubeHistory/>} />
         <Route path='/you' element={<YoutubeYou/>} />
       </Routes>
